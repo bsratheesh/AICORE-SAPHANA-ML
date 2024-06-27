@@ -1,0 +1,8 @@
+hana_ml
+ai_core_sdk
+shapely
+jinja2
+urllib3
+requests
+cryptography
+IPython
