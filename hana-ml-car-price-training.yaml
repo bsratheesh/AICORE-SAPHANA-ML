@@ -12,12 +12,12 @@ metadata:
     ai.sap.com/version: "0.0.1"
 spec:
   imagePullSecrets:
-    - name: docker-registry-secret-XYZ # your docker registry secret
+    - name: rbscred # your docker registry secret
   entrypoint: mypipeline
   templates:
   - name: mypipeline
     container:
-      image: docker.io/YOURUSERHERE/hana-ml-car-price-training:01 # Your docker image name
+      image: docker.io/ratheeshsap/hana-ml-car-price-training:01 # Your docker image name
       command: ["/bin/sh", "-c"]
       args:
         - "python /app/src/main.py"
